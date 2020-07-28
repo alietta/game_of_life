@@ -15,5 +15,20 @@
   "bugs": {
     "url": "https://github.com/alietta/game_of_life/issues"
   },
-  "homepage": "https://github.com/alietta/game_of_life#readme"
+  "homepage": "https://github.com/alietta/game_of_life#readme",
+  "dependencies": {
+    "@babel/polyfill": "^7.10.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "@types/enzyme": "^3.10.5",
+    "@types/react-test-renderer": "^16.9.2",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-emotion": "^10.0.33",
+    "typescript": "^3.9.7"
+  }
 }
