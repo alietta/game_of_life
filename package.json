@@ -17,7 +17,11 @@
   },
   "homepage": "https://github.com/alietta/game_of_life#readme",
   "dependencies": {
-    "@babel/polyfill": "^7.10.4"
+    "@babel/polyfill": "^7.10.4",
+    "@emotion/cache": "^10.0.29",
+    "@emotion/core": "^10.0.28",
+    "@emotion/css": "^10.0.27",
+    "@emotion/styled": "^10.0.27"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
