@@ -10,7 +10,8 @@
     "start": "webpack-dev-server --config ./webpack.config.js --mode development --open --hot",
     "storybook": "start-storybook -p 6011",
     "lint": "npx eslint --ext .js,.jsx,.ts,.tsx --fix src/",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "pre-commit": "lint-staged"
   },
   "repository": {
     "type": "git",
@@ -71,10 +72,12 @@
     "eslint-plugin-react": "^7.20.5",
     "eslint-plugin-react-hooks": "^4.0.8",
     "html-webpack-plugin": "^4.3.0",
+    "husky": "^4.2.5",
     "jest": "^26.2.2",
     "jest-canvas-mock": "^2.2.0",
     "jest-emotion": "^10.0.32",
     "jest-serializer-enzyme": "^1.0.0",
+    "lint-staged": "^10.2.11",
     "redux-mock-store": "^1.5.4",
     "redux-saga-test-plan": "^4.0.0-rc.3",
     "storybook": "^5.3.19",
@@ -83,5 +86,15 @@
     "webpack": "^4.44.0",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "eslint . --fix"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
