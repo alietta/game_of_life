@@ -1,23 +1,30 @@
 module.exports = {
   presets: [
     [
-      "@babel/preset-env",
+      '@babel/preset-env',
       {
         targets: {
-          node: "current",
+          node: 'current',
         },
       },
     ],
-    "@babel/preset-react",
-    "@babel/preset-typescript",
-    '@emotion/babel-preset-css-prop',
+    '@babel/preset-react',
+    '@babel/preset-typescript',
+    [
+      '@emotion/babel-preset-css-prop',
+      {
+        autoLabel: true,
+        sourceMap: true,
+        labelFormat: '[local]',
+      },
+    ],
   ],
   env: {
     production: {
-      plugins: ["emotion"],
+      plugins: ['emotion'],
     },
     development: {
-      plugins: [["emotion", { sourceMap: true }]],
+      plugins: [['emotion', { sourceMap: true }]],
     },
   },
 };

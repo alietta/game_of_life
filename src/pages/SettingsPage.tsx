@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
 
 export const SettingsPage: FC = () => {
-  return <div>this is settings page</div>;
+  return <div css={{ background: 'blue' }}>this is settings page</div>;
 };

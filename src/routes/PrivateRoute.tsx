@@ -1,6 +1,5 @@
 import React from 'react';
-import { Route, Redirect } from 'react-router-dom';
-import { RouteProps } from '@types/react-router';
+import { Route, Redirect, RouteProps } from 'react-router-dom';
 
 interface Props extends RouteProps {
   isAuth: boolean;
