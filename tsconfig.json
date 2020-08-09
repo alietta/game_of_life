@@ -6,6 +6,8 @@
     "paths": {
       "@/*": ["src/*"]
     },
+    "allowSyntheticDefaultImports": true,
+    "importsNotUsedAsValues": "preserve",
     "forceConsistentCasingInFileNames": false,
     "resolveJsonModule": true,
     "isolatedModules": true,

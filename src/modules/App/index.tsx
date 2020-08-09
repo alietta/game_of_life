@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { FC } from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import { DarkMode } from 'sancho';
+import { BaseRoutes } from '@/routes/BaseRoutes';
 
-export const App: React.FC = () => {
+export const App: FC = () => {
+  const isAuth = true;
+
   return (
-    <div>
-      <div>This is my future game</div>
-    </div>
+    <DarkMode>
+      <BrowserRouter>
+        <BaseRoutes isAuth={isAuth} />
+      </BrowserRouter>
+    </DarkMode>
   );
 };
