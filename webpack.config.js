@@ -34,6 +34,15 @@ module.exports = {
     contentBase: path.join(__dirname, "dist"),
     port: 3040,
     hot: true,
+    stats: {
+      children: false,
+      chunks: false,
+      chunkModules: false,
+      modules: false,
+      reasons: false,
+      useExports: false,
+      errorDetails: true,
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({
