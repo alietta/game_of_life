@@ -31,7 +31,7 @@ const RangeLabeledInput: FC<Props> = props => {
   }, [value, labelName]);
 
   return (
-    <InputGroup label={label}>
+    <InputGroup label={label} css={{ display: 'flex', flexDirection: 'column' }}>
       <input
         {...inputProps}
         placeholder="Name"
@@ -42,6 +42,10 @@ const RangeLabeledInput: FC<Props> = props => {
         value={value}
         onChange={handleChange}
       />
+      <div css={{ display: 'flex', justifyContent: 'space-between', padding: '0 5px' }}>
+        <Text>{min}</Text>
+        <Text>{max}</Text>
+      </div>
     </InputGroup>
   );
 };

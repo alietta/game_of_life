@@ -4,18 +4,18 @@ import { RangeLabeledInput } from './index';
 
 export default { title: 'inputs' };
 
-export const login = () => (
+export const RangeStory = () => (
   <div css={{ width: 400 }}>
     <DarkMode>
-      <Layer>
+      <Layer css={{ borderRadius: 0 }}>
         <RangeLabeledInput labelName="field size" />
       </Layer>
     </DarkMode>
     <LightMode>
-      <Layer>
+      <Layer css={{ borderRadius: 0 }}>
         <RangeLabeledInput
           labelName="value"
-          step={2}
+          step={0.5}
           formValue={(value: string) => `${value} x ${value}`}
         />
       </Layer>
