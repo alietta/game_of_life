@@ -5,7 +5,7 @@ import { Settings } from './index';
 export default { title: 'settings' };
 
 export const settings = () => (
-  <div css={{ width: 400 }}>
+  <div css={{ width: '100%' }}>
     <DarkMode>
       <Settings />
     </DarkMode>
