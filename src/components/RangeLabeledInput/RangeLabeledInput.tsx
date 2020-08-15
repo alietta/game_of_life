@@ -1,5 +1,5 @@
 import React, { FC, useState, ChangeEvent, useEffect } from 'react';
-import { useTheme, Text, InputGroup, Input } from 'sancho';
+import { Text, InputGroup } from 'sancho';
 
 type Props = {
   formValue?: (value: string) => string;
@@ -20,9 +20,9 @@ const RangeLabeledInput: FC<Props> = props => {
   const [value, setValue] = useState<string>(`${min}`);
   const [label, setLabel] = useState<string>('');
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-    const { value } = event.currentTarget;
-    setValue(value);
-    onValueChange && onValueChange(value);
+    const { value: rangeValue } = event.target;
+    setValue(event.target.value);
+    onValueChange && onValueChange(rangeValue);
   };
 
   useEffect(() => {
