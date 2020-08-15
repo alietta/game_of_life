@@ -2,7 +2,7 @@ import React, { FC, useState, MouseEvent } from 'react';
 import { Layer, Button } from 'sancho';
 import { RangeLabeledInput, RangeLabeledInputProps } from '@/components/RangeLabeledInput';
 import { PercentFilled, PercentFilledProps } from '@/components/PercentFilled';
-import { SettingsRow, SettingsElement, LayerStyle } from './SettingElements';
+import { SettingsRow, SettingsElement, LayerStyle } from './SettingStyle';
 
 interface Props {
   onSubmit: () => void;
