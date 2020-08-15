@@ -11,6 +11,7 @@
     "storybook": "start-storybook -p 6011",
     "lint": "npx eslint --ext .js,.jsx,.ts,.tsx --fix src/",
     "build-storybook": "build-storybook",
+    "check": "npm run test && npm run lint",
     "pre-commit": "lint-staged"
   },
   "repository": {
