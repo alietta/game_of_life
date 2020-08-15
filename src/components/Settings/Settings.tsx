@@ -1,32 +1,44 @@
-import React, { FC, useState, ChangeEvent } from 'react';
+import React, { FC, useState, MouseEvent } from 'react';
 import { Layer, Button } from 'sancho';
-import { RangeLabeledInput } from '@/components/RangeLabeledInput';
-import { PercentFilled } from '@/components/PercentFilled';
+import { RangeLabeledInput, RangeLabeledInputProps } from '@/components/RangeLabeledInput';
+import { PercentFilled, PercentFilledProps } from '@/components/PercentFilled';
 import { SettingsRow, SettingsElement, LayerStyle } from './SettingElements';
 
-interface Props {}
+interface Props {
+  onSubmit: () => void;
+  field: RangeLabeledInputProps;
+  cell: RangeLabeledInputProps;
+  speed: RangeLabeledInputProps;
+  percent: PercentFilledProps;
+}
 
 const Settings: FC<Props> = props => {
+  const { onSubmit, field, cell, speed, percent } = props;
+  const handleSubmit = (event: MouseEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    onSubmit();
+  };
+
   return (
-    <form action="" css={{ width: '100%' }}>
+    <form action="" css={{ width: '100%' }} onSubmit={handleSubmit}>
       <Layer css={LayerStyle} elevation="xs">
         <SettingsRow>
           <SettingsElement>
-            <RangeLabeledInput labelName="Field size" />
+            <RangeLabeledInput {...field} />
           </SettingsElement>
           <SettingsElement>
-            <RangeLabeledInput labelName="Cell size" />
+            <RangeLabeledInput {...cell} />
           </SettingsElement>
         </SettingsRow>
         <SettingsRow>
           <SettingsElement>
-            <PercentFilled />
+            <PercentFilled {...percent} />
           </SettingsElement>
           <SettingsElement>
-            <RangeLabeledInput labelName="Start speed" />
+            <RangeLabeledInput {...speed} />
           </SettingsElement>
         </SettingsRow>
-        <Button>Start Game</Button>
+        <Button type="submit">Start Game</Button>
       </Layer>
     </form>
   );

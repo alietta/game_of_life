@@ -1,13 +1,13 @@
 import React, { FC, useState, ChangeEvent, useEffect } from 'react';
 import { Text, InputGroup } from 'sancho';
 
-type Props = {
+export type RangeLabeledInputProps = {
   formValue?: (value: string) => string;
   labelName: string;
   onValueChange?: (value: string) => void;
 } & React.InputHTMLAttributes<HTMLInputElement>;
 
-const RangeLabeledInput: FC<Props> = props => {
+const RangeLabeledInput: FC<RangeLabeledInputProps> = props => {
   const {
     formValue,
     labelName,

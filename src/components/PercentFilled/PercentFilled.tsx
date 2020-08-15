@@ -1,11 +1,11 @@
 import React, { FC, useState, ChangeEvent } from 'react';
 import { InputGroup, Input } from 'sancho';
 
-interface Props {
+export interface PercentFilledProps {
   onValueChange?: (value: number) => void;
 }
 
-const PercentFilled: FC<Props> = props => {
+const PercentFilled: FC<PercentFilledProps> = props => {
   const { onValueChange } = props;
   const [value, setValue] = useState<number | string>(50);
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
