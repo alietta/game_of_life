@@ -21,7 +21,7 @@
     "sourceMap": true,
     "strict": true,
     "esModuleInterop": true,
-    "types": ["node", "@emotion/core"]
+    "types": ["node", "@emotion/core", "jest"]
   },
   "include": ["./src/**/*"],
   "exclude": ["node_modules"]
