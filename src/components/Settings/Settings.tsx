@@ -6,14 +6,20 @@ import { SettingsRow, SettingsElement, LayerStyle } from './SettingElements';
 
 interface Props {
   onSubmit: () => void;
-  field: RangeLabeledInputProps;
-  cell: RangeLabeledInputProps;
-  speed: RangeLabeledInputProps;
-  percent: PercentFilledProps;
+  field?: RangeLabeledInputProps;
+  cell?: RangeLabeledInputProps;
+  speed?: RangeLabeledInputProps;
+  percent?: PercentFilledProps;
 }
 
 const Settings: FC<Props> = props => {
-  const { onSubmit, field, cell, speed, percent } = props;
+  const {
+    onSubmit,
+    field = { labelName: 'Field size' },
+    cell = { labelName: 'Cell size' },
+    speed = { labelName: 'Start speed' },
+    percent,
+  } = props;
   const handleSubmit = (event: MouseEvent<HTMLFormElement>) => {
     event.preventDefault();
     onSubmit();
