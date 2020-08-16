@@ -22,11 +22,8 @@ export const appSlice = createSlice({
     error: (state) => {
       state.status = 'error';
     },
-    setDarkTheme: (state) => {
-      state.darkTheme = true;
+    switchTheme: (state) => {
+      state.darkTheme = !state.darkTheme;
     },
-    setLightTheme: (state) => {
-      state.darkTheme = false;
-    }
   },
 });
