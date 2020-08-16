@@ -1,13 +1,11 @@
 import React, { FC, useState, useEffect } from 'react';
-import { useHistory } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { useStoreSelector } from '@/hooks/useStoreSelector';
 import { Settings } from '@/components/Settings';
+import history from '@/rdx/history';
 import { actions } from './duck/reducer';
 
 export const GameSettings: FC = () => {
   const dispatch = useDispatch();
-  const history = useHistory();
   const changePercent = (value: number) => {
     dispatch(actions.percent(value));
   };
