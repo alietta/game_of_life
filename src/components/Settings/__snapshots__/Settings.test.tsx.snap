@@ -24,6 +24,7 @@ exports[`Settings test render 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 10px;
+  box-sizing: border-box;
 }
 
 .emotion-44 {
@@ -49,6 +50,7 @@ exports[`Settings test render 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 10px;
+  box-sizing: border-box;
 }
 
 .emotion-20 {
