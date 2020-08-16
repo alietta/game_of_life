@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { PLAY, FAST, SLOW, PAUSE } from '@/constants';
+import { RESET, PLAY, FAST, SLOW, PAUSE } from '@/constants';
 import {
   Layer,
   IconPause,
@@ -27,7 +27,7 @@ const Controls: FC<ControlsProps> = props => {
     <Layer elevation="xs" css={LayerStyle}>
       <Button
         size="lg"
-        name="reset"
+        name={RESET}
         intent="primary"
         variant="outline"
         onClick={resetGame}
