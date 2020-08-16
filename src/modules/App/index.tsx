@@ -7,7 +7,7 @@ import { Loader } from '@/components/Loader';
 import { AppTheme } from './AppTheme';
 
 export const App: FC = () => {
-  const isAuth = true;
+  const isAuth = useStoreSelector(state => state.user.isAuth);
   const { status, darkTheme }= useStoreSelector(state => state.app);
 
   return (
