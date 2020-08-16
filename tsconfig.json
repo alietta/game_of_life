@@ -13,7 +13,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "checkJs": false,
-    "target": "es5",
+    "target": "es6",
     "module": "esnext",
     "downlevelIteration": true,
     "allowJs": true,

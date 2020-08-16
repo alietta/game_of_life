@@ -9,6 +9,7 @@ import {
   IconRefreshCw,
   Button,
 } from 'sancho';
+import { LayerStyle } from './ControlsStyles';
 
 export interface ControlsProps {
   resetGame: () => void;
@@ -23,7 +24,7 @@ const Controls: FC<ControlsProps> = props => {
   };
 
   return (
-    <Layer elevation="xs">
+    <Layer elevation="xs" css={LayerStyle}>
       <Button
         size="lg"
         name="reset"
