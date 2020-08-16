@@ -29,6 +29,7 @@ const Header: FC<HeaderProps> = (props) => {
         }}
       >
         <Button
+          name="theme"
           variant='ghost'
           onClick={switchTheme}
         >
@@ -36,6 +37,7 @@ const Header: FC<HeaderProps> = (props) => {
         </Button>
         <Text css={{ marginRight: 10 }}>{name}</Text>
         <Button
+          name="logout"
           variant='ghost'
           onClick={onLogout}
         >

@@ -1,0 +1,308 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header test render 1`] = `
+.emotion-8 {
+  height: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #f1f3f5;
+}
+
+.emotion-6 {
+  min-width: 1024px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-5 {
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 1rem;
+  min-width: 1024px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (min-width:992px) {
+  .emotion-5 {
+    padding: 0 1.5rem;
+  }
+}
+
+.emotion-0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: none;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  border: none;
+  text-rendering: optimizeLegibility;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  box-shadow: none;
+  font-weight: 500;
+  position: relative;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  padding: 0 1rem;
+  height: 40px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: transparent;
+  box-shadow: none;
+  color: #5F6871;
+  opacity: 1;
+  background: transparent;
+  box-shadow: none;
+  -webkit-transition: box-shadow 0.07s cubic-bezier(0.35,0,0.25,1),background 0.07s cubic-bezier(0.35,0,0.25,1),opacity 0.35s cubic-bezier(0.35,0,0.25,1);
+  transition: box-shadow 0.07s cubic-bezier(0.35,0,0.25,1),background 0.07s cubic-bezier(0.35,0,0.25,1),opacity 0.35s cubic-bezier(0.35,0,0.25,1);
+}
+
+.emotion-0:focus {
+  outline: 3px auto hsla(208.79999999999995,77.2%,42.9%,0.8);
+}
+
+.emotion-0:focus:not([data-focus-visible-added]) {
+  outline: none;
+}
+
+.emotion-0[aria-expanded="true"] {
+  background: hsla(210,10.8%,14.5%,0.15);
+  box-shadow: none;
+  opacity: 1;
+}
+
+.emotion-2 {
+  margin-right: 10px;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  color: #212529;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+<Header
+  onLogout={[MockFunction]}
+  switchTheme={[MockFunction]}
+>
+  <div
+    className="emotion-8"
+  >
+    <Component
+      className="emotion-6"
+    >
+      <div
+        className="emotion-5"
+      >
+        <Button
+          name="theme"
+          onClick={[MockFunction]}
+          variant="ghost"
+        >
+          <div
+            className="Button Touchable emotion-0"
+            name="theme"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseDownCapture={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchMoveCapture={[Function]}
+            onTouchStart={[Function]}
+            onTouchStartCapture={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <Component>
+              <svg
+                fill="none"
+                height="20px"
+                stroke="#212529"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+                width="20px"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="5"
+                />
+                <line
+                  x1="12"
+                  x2="12"
+                  y1="1"
+                  y2="3"
+                />
+                <line
+                  x1="12"
+                  x2="12"
+                  y1="21"
+                  y2="23"
+                />
+                <line
+                  x1="4.22"
+                  x2="5.64"
+                  y1="4.22"
+                  y2="5.64"
+                />
+                <line
+                  x1="18.36"
+                  x2="19.78"
+                  y1="18.36"
+                  y2="19.78"
+                />
+                <line
+                  x1="1"
+                  x2="3"
+                  y1="12"
+                  y2="12"
+                />
+                <line
+                  x1="21"
+                  x2="23"
+                  y1="12"
+                  y2="12"
+                />
+                <line
+                  x1="4.22"
+                  x2="5.64"
+                  y1="19.78"
+                  y2="18.36"
+                />
+                <line
+                  x1="18.36"
+                  x2="19.78"
+                  y1="5.64"
+                  y2="4.22"
+                />
+              </svg>
+            </Component>
+          </div>
+        </Button>
+        <Component
+          className="emotion-2"
+        >
+          <span
+            className="emotion-1"
+          />
+        </Component>
+        <Button
+          name="logout"
+          onClick={[MockFunction]}
+          variant="ghost"
+        >
+          <div
+            className="Button Touchable emotion-0"
+            name="logout"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseDownCapture={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchMoveCapture={[Function]}
+            onTouchStart={[Function]}
+            onTouchStartCapture={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <Component>
+              <svg
+                fill="none"
+                height="20px"
+                stroke="#212529"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+                width="20px"
+              >
+                <path
+                  d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"
+                />
+                <polyline
+                  points="16 17 21 12 16 7"
+                />
+                <line
+                  x1="21"
+                  x2="9"
+                  y1="12"
+                  y2="12"
+                />
+              </svg>
+            </Component>
+          </div>
+        </Button>
+      </div>
+    </Component>
+  </div>
+</Header>
+`;
