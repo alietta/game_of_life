@@ -1,5 +1,6 @@
 import React, { FunctionComponent, useEffect, useRef } from 'react';
 import { useStoreSelector } from '@/hooks/useStoreSelector';
+import obelisk from 'obelisk.js';
 import { FieldWrapper } from './FieldStyles';
 
 export const Field: FunctionComponent = () => {
@@ -26,9 +27,20 @@ export const Field: FunctionComponent = () => {
     if (canvas) {
       const context = canvas.getContext('2d');
       ctxRef.current = context;
+      const point = new obelisk.Point(fieldSize * cellSize, cellSize);
+      const pixelView = new obelisk.PixelView(canvas, point);
+      const dimension = new obelisk.CubeDimension(cellSize, cellSize, cellSize);
+      const gray = obelisk.ColorPattern.GRASS_GREEN;
+      const color = new obelisk.CubeColor().getByHorizontalColor(gray);
+
+      const cube = new obelisk.Cube(dimension, color, true);
+      const p = new obelisk.Point3D(0, 0, 0);
+      pixelView.renderObject(cube, p);
+      const post = fieldSize * cellSize - cellSize;
+      const p2 = new obelisk.Point3D(post, post, 0);
+      pixelView.renderObject(cube, p2);
     }
   }, []);
-
 
   return (
     <FieldWrapper>
