@@ -1,4 +1,4 @@
-import React, { FC, useState, ChangeEvent, useEffect } from 'react';
+import React, { FC, useState, ChangeEvent, useEffect, useCallback } from 'react';
 import { Text, InputGroup } from 'sancho';
 
 export type RangeLabeledInputProps = {
@@ -17,8 +17,12 @@ const RangeLabeledInput: FC<RangeLabeledInputProps> = props => {
     step = 1,
     ...inputProps
   } = props;
+  const getLabel = useCallback((val: string) => {
+    const formatedValue = formValue ? formValue(val) : val;
+    return `${labelName}: ${formatedValue}`;
+  }, [labelName]);
   const [value, setValue] = useState<string>(`${min}`);
-  const [label, setLabel] = useState<string>('');
+  const [label, setLabel] = useState<string>(getLabel(`${min}`));
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     const { value: rangeValue } = event.target;
     setValue(event.target.value);
@@ -26,9 +30,8 @@ const RangeLabeledInput: FC<RangeLabeledInputProps> = props => {
   };
 
   useEffect(() => {
-    const formatedValue = formValue ? formValue(value) : value;
-    setLabel(`${labelName}: ${formatedValue}`);
-  }, [value, labelName]);
+    setLabel(getLabel(value));
+  }, [value]);
 
   return (
     <InputGroup label={label} css={{ display: 'flex', flexDirection: 'column' }}>

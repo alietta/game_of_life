@@ -1,6 +1,5 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
-import { InterpolationWithTheme } from 'sancho';
 
 export const SettingsRow = styled.div`
   display: flex;
@@ -22,4 +21,5 @@ export const LayerStyle = css({
   justifyContent: 'center',
   alignItems: 'center',
   padding: '10px',
+  boxSizing: 'border-box',
 });
