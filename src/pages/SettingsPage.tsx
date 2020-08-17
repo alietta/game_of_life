@@ -7,7 +7,7 @@ export const SettingsPage: FC = () => {
   return (
     <WithHeadbarLayout>
       <GameSettings />
-      <Field />
+      <Field presentation />
     </WithHeadbarLayout>
   );
 };

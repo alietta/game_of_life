@@ -1,13 +1,8 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-interface Life {
-  alive: boolean;
-  age: number;
-  position: number;
-}
 export interface FieldState {
-  active: Life[];
-  cells: Life[][];
+  active: number[];
+  cells: number[][];
 }
 const fieldInitialState: FieldState = {
   active: [],
@@ -17,16 +12,16 @@ export const fieldSlice = createSlice({
   name: 'field',
   initialState: fieldInitialState,
   reducers: {
-    setField: (state, { payload }: PayloadAction<Life[][]>) => {
+    setField: (state, { payload }: PayloadAction<number[][]>) => {
       state.cells = payload;
     },
     clearField: state => {
       state.active = [];
       state.cells = [];
     },
-    setActive: (state, { payload }: PayloadAction<Life[]>) => {
+    setActive: (state, { payload }: PayloadAction<number[]>) => {
       state.active = payload;
-    },
+    }
   },
 });
 

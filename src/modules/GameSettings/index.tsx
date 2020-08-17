@@ -29,7 +29,7 @@ export const GameSettings: FC = () => {
   };
 
   useEffect(() => {
-    setMaxField(Math.floor(900 / cellSize));
+    setMaxField(Math.floor(500 / cellSize));
   }, [cellSize]);
 
   return (
