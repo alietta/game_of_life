@@ -21,14 +21,6 @@ export const Field: FunctionComponent<Props> = props => {
   useEffect(() => {
     const canvas = canvasRef.current;
     if (canvas) {
-      const width = 1000;
-      canvas.width = width * 2;
-      canvas.height = width * 2;
-      canvas.style.width = `${width}px`;
-      canvas.style.height = `${width}px`;
-      if (ctxRef && ctxRef.current) {
-        ctxRef.current.scale(2, 2);
-      }
       /* if (viewRef.current) { */
       /*   viewRef.current.clear(); */
       /*   const dimension = new obelisk.CubeDimension( */
@@ -52,9 +44,15 @@ export const Field: FunctionComponent<Props> = props => {
   useEffect(() => {
     const canvas = canvasRef.current;
     if (canvas) {
+      const width = 1000;
+      canvas.width = width * 2;
+      canvas.height = width * 2;
+      canvas.style.width = `${width}px`;
+      canvas.style.height = `${width}px`;
       const context = canvas.getContext('2d');
+      /* context && context.scale(2, 2); */
       ctxRef.current = context;
-      const point = new obelisk.Point(500, 50);
+      const point = new obelisk.Point(1000, 50);
       const pixelView = new obelisk.PixelView(canvas, point);
       viewRef.current = pixelView;
     }
