@@ -52,13 +52,19 @@ export const Field: FunctionComponent<Props> = props => {
     if (viewRef.current) {
       viewRef.current.clear();
       const dimension = new obelisk.CubeDimension(cellSize, cellSize, cellSize);
-      const gray = obelisk.ColorPattern.GRASS_GREEN;
-      const color = new obelisk.CubeColor().getByHorizontalColor(gray);
-
+      const green = new obelisk.CubeColor().getByHorizontalColor(obelisk.ColorPattern.GRASS_GREEN);
+      const blue = new obelisk.CubeColor().getByHorizontalColor(obelisk.ColorPattern.BLUE);
+      const purple = new obelisk.CubeColor().getByHorizontalColor(obelisk.ColorPattern.PURPLE);
+      const greenCube = new obelisk.Cube(dimension, green, true);
+      const blueCube = new obelisk.Cube(dimension, blue, true);
+      const purpleCube = new obelisk.Cube(dimension, purple, true);
       cells.forEach((items: number[], y: number) => {
         items.forEach((item, x: number) => {
           if (item > 0) {
-            const cube = new obelisk.Cube(dimension, color, true);
+            const bigCube = item > 3 && item < 6 ? blueCube : purpleCube;
+            const cube = item < 4 ? greenCube : bigCube;
+            /* const gradient = new obelisk.CubeColor().getByHorizontalColor(color); */
+            /* const cube = new obelisk.Cube(dimension, gradient, true); */
             const p = new obelisk.Point3D(cellSize * x, cellSize * y, 0);
             viewRef!.current!.renderObject(cube, p);
           }
