@@ -15,7 +15,6 @@ describe('LoginForm', () => {
       target: { value: 'Ivan' },
     });
     element.find('button').simulate('submit');
-    expect(onSubmit).toHaveBeenCalled();
-    expect(onSubmit.mock.calls[0][0]).toMatchObject({ name: 'Ivan' });
+    expect(onSubmit).toHaveBeenCalledWith({ name: 'Ivan' });
   });
 });
