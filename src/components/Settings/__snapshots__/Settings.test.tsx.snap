@@ -313,7 +313,7 @@ exports[`Settings test render 1`] = `
                 >
                   <Component
                     className="emotion-6"
-                    label="Field size: 1"
+                    label="Field size: 10"
                   >
                     <div
                       className="emotion-5"
@@ -332,7 +332,7 @@ exports[`Settings test render 1`] = `
                             <div
                               className="Label__text emotion-0"
                             >
-                              Field size: 1
+                              Field size: 10
                             </div>
                           </Component>
                         </label>
@@ -344,7 +344,7 @@ exports[`Settings test render 1`] = `
                         placeholder="Name"
                         step={1}
                         type="range"
-                        value="1"
+                        value="10"
                       />
                       <div
                         className="emotion-4"
@@ -378,7 +378,7 @@ exports[`Settings test render 1`] = `
                 >
                   <Component
                     className="emotion-6"
-                    label="Cell size: 1"
+                    label="Cell size: 10"
                   >
                     <div
                       className="emotion-5"
@@ -397,7 +397,7 @@ exports[`Settings test render 1`] = `
                             <div
                               className="Label__text emotion-0"
                             >
-                              Cell size: 1
+                              Cell size: 10
                             </div>
                           </Component>
                         </label>
@@ -409,7 +409,7 @@ exports[`Settings test render 1`] = `
                         placeholder="Name"
                         step={1}
                         type="range"
-                        value="1"
+                        value="10"
                       />
                       <div
                         className="emotion-4"
@@ -503,7 +503,7 @@ exports[`Settings test render 1`] = `
                 >
                   <Component
                     className="emotion-6"
-                    label="Start speed: 1"
+                    label="Start speed: 10"
                   >
                     <div
                       className="emotion-5"
@@ -522,7 +522,7 @@ exports[`Settings test render 1`] = `
                             <div
                               className="Label__text emotion-0"
                             >
-                              Start speed: 1
+                              Start speed: 10
                             </div>
                           </Component>
                         </label>
@@ -534,7 +534,7 @@ exports[`Settings test render 1`] = `
                         placeholder="Name"
                         step={1}
                         type="range"
-                        value="1"
+                        value="10"
                       />
                       <div
                         className="emotion-4"

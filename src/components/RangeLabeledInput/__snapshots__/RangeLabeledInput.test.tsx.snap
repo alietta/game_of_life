@@ -77,7 +77,7 @@ exports[`RangeLabeledInput test render 1`] = `
 >
   <Component
     className="emotion-6"
-    label="values: 1"
+    label="values: 10"
   >
     <div
       className="emotion-5"
@@ -96,7 +96,7 @@ exports[`RangeLabeledInput test render 1`] = `
             <div
               className="Label__text emotion-0"
             >
-              values: 1
+              values: 10
             </div>
           </Component>
         </label>
@@ -108,7 +108,7 @@ exports[`RangeLabeledInput test render 1`] = `
         placeholder="Name"
         step={1}
         type="range"
-        value="1"
+        value="10"
       />
       <div
         className="emotion-4"
