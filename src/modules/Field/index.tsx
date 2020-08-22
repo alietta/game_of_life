@@ -4,7 +4,7 @@ import { useStoreSelector } from '@/hooks/useStoreSelector';
 import { actions } from './duck/reducer';
 import { FieldWrapper } from './FieldStyles';
 import { makeField, randomByPercent, getGeneration } from './helper';
-import { canvasSettings, getDrawData, DrawData, drawCells } from './canvasFunction';
+import { canvasSettings, getDrawData, DrawData, drawCells } from './canvasFunctions';
 
 export const Field: FunctionComponent = () => {
   const dispatch = useDispatch();
