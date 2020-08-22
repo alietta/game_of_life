@@ -5,9 +5,10 @@ import { appSlice } from '@/modules/App/duck/reducer';
 import { userSlice } from '@/modules/Login/duck/reducer';
 import { Header } from './Header';
 
-const Headbar: FC = () => {
+export const Headbar: FC = () => {
   const dispatch = useDispatch();
   const name = useStoreSelector(state => state.user.name);
+
   const onLogout = () => {
     dispatch(userSlice.actions.logout());
   };
@@ -24,4 +25,3 @@ const Headbar: FC = () => {
     />
   );
 };
-export { Headbar };

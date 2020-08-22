@@ -1,3 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`WithoutHeadbarLayout render 1`] = `"<div class=\\"css-1n6pecj-WithoutHeadbarLayout\\"><div class=\\"css-13ru0hl-WithoutHeadbarLayout\\"><h1>Test</h1></div></div>"`;

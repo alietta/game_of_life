@@ -5,7 +5,7 @@ export interface PercentFilledProps {
   onValueChange?: (value: number) => void;
 }
 
-const PercentFilled: FC<PercentFilledProps> = props => {
+export const PercentFilled: FC<PercentFilledProps> = props => {
   const { onValueChange } = props;
   const [value, setValue] = useState<number | string>(50);
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -36,5 +36,3 @@ const PercentFilled: FC<PercentFilledProps> = props => {
     </InputGroup>
   );
 };
-
-export { PercentFilled };
