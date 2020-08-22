@@ -14,13 +14,13 @@ import {
   Button,
 } from 'sancho';
 
-interface EnterFormProps {
-  onSubmit: (values?: { name: string }) => void;
+interface LoginFormProps {
+  onSubmit: (values: { name: string }) => void;
 }
 
-export const LoginForm: FunctionComponent<EnterFormProps> = ({
+export const LoginForm: FunctionComponent<LoginFormProps> = ({
   onSubmit = (): void => console.log('submint'),
-}: EnterFormProps) => {
+}) => {
   const theme = useTheme();
   const [nameValue, setName] = useState<string>('');
   const changeName = (e: ChangeEvent<HTMLInputElement>): void => {

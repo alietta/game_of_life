@@ -1,14 +1,19 @@
 import React, { FC } from 'react';
+import { useStoreSelector } from '@/hooks/useStoreSelector';
+import { useDispatch  } from 'react-redux';
+import { appSlice } from '@/modules/App/duck/reducer';
+import { userSlice } from '@/modules/Login/duck/reducer';
 import { Header } from './Header';
 
 export const Headbar: FC = () => {
-  // TODO: take name from store
-  const name = 'Anna';
+  const dispatch = useDispatch();
+  const name = useStoreSelector(state => state.user.name);
+
   const onLogout = () => {
-    // TODO: dipatch logout action
+    dispatch(userSlice.actions.logout());
   };
   const switchTheme = () => {
-    // TODO: dipatch theme action
+    dispatch(appSlice.actions.switchTheme());
   };
 
 
