@@ -1,20 +1,15 @@
-import React, { FunctionComponent, useEffect, useRef } from 'react';
+import React, { FunctionComponent, useEffect, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useStoreSelector } from '@/hooks/useStoreSelector';
-import obelisk from 'obelisk.js';
 import { actions } from './duck/reducer';
 import { FieldWrapper } from './FieldStyles';
 import { makeField, randomByPercent, getGeneration } from './helper';
+import { canvasSettings, getDrawData, DrawData, drawCells } from './canvasFunction';
 
-interface Props {
-  presentation?: boolean;
-}
-export const Field: FunctionComponent<Props> = props => {
-  const { presentation = false } = props;
+export const Field: FunctionComponent = () => {
   const dispatch = useDispatch();
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
-  const ctxRef = useRef<CanvasRenderingContext2D | null>(null);
-  const viewRef = useRef<obelisk.PixelView | null>(null);
+  const [drawData, setDrawData] = useState<DrawData>();
   const { fieldSize, cellSize, percent } = useStoreSelector(
     state => state.settings
   );
@@ -24,52 +19,14 @@ export const Field: FunctionComponent<Props> = props => {
   useEffect(() => {
     const canvas = canvasRef.current;
     if (canvas) {
-      const width = 1000;
-      canvas.width = width * 2;
-      canvas.height = width * 2;
-      canvas.style.width = `${width}px`;
-      canvas.style.height = `${width}px`;
-      const context = canvas.getContext('2d');
-      /* context && context.scale(2, 2); */
-      ctxRef.current = context;
-      const point = new obelisk.Point(1000, 50);
-      const pixelView = new obelisk.PixelView(canvas, point);
-      viewRef.current = pixelView;
+      canvasSettings(canvas, 1000);
+      setDrawData(getDrawData(canvas, cellSize));
     }
-    /* if (presentation) { */
-    /*   dispatch( */
-    /*     actions.setActive([ */
-    /*       0, */
-    /*       fieldSize - 1, */
-    /*       fieldSize * fieldSize - 1, */
-    /*       fieldSize * (fieldSize - 1), */
-    /*     ]) */
-    /*   ); */
-    /* } */
   }, []);
 
   useEffect(() => {
-    if (viewRef.current) {
-      viewRef.current.clear();
-      const dimension = new obelisk.CubeDimension(cellSize, cellSize, cellSize);
-      const green = new obelisk.CubeColor().getByHorizontalColor(obelisk.ColorPattern.GRASS_GREEN);
-      const blue = new obelisk.CubeColor().getByHorizontalColor(obelisk.ColorPattern.BLUE);
-      const purple = new obelisk.CubeColor().getByHorizontalColor(obelisk.ColorPattern.PURPLE);
-      const greenCube = new obelisk.Cube(dimension, green, true);
-      const blueCube = new obelisk.Cube(dimension, blue, true);
-      const purpleCube = new obelisk.Cube(dimension, purple, true);
-      cells.forEach((items: number[], y: number) => {
-        items.forEach((item, x: number) => {
-          if (item > 0) {
-            const bigCube = item > 3 && item < 6 ? blueCube : purpleCube;
-            const cube = item < 4 ? greenCube : bigCube;
-            /* const gradient = new obelisk.CubeColor().getByHorizontalColor(color); */
-            /* const cube = new obelisk.Cube(dimension, gradient, true); */
-            const p = new obelisk.Point3D(cellSize * x, cellSize * y, 0);
-            viewRef!.current!.renderObject(cube, p);
-          }
-        });
-      });
+    if (drawData) {
+      drawCells(cells, cellSize, drawData);
     }
   }, [cells, cellSize, fieldSize]);
 
