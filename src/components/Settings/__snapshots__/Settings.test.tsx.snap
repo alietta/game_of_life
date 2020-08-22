@@ -1,0 +1,596 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Settings test render 1`] = `
+.emotion-47 {
+  width: 100%;
+}
+
+.emotion-45 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 2px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.emotion-44 {
+  position: relative;
+  background: white;
+  box-shadow: 0 0 1px hsla(210,10.3%,22.7%,0.1), 0 0 1px 1px hsla(210,10.3%,22.7%,0.12);
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 2px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.emotion-20 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+}
+
+.emotion-8 {
+  max-width: 260px;
+  width: 100%;
+  padding: 10px;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-5 {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-5:first-child {
+  margin-top: 0;
+}
+
+.emotion-1 {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.emotion-0 {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  color: #212529;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #5F6871;
+  line-height: 1.5;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  color: #212529;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  font-size: 1rem;
+}
+
+.emotion-26 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-25 {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-25:first-child {
+  margin-top: 0;
+}
+
+.emotion-24 {
+  display: block;
+  width: 100%;
+  line-height: 1.5;
+  color: #212529;
+  background-color: transparent;
+  background-image: none;
+  background-clip: padding-box;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  touch-action: manipulation;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  border: none;
+  box-shadow: 0 0 0 2px transparent inset,0 0 0 1px hsla(210,10.8%,14.5%,0.2) inset;
+  border-radius: 0.25rem;
+  -webkit-transition: background 0.25s cubic-bezier(0.35,0,0.25,1),border-color 0.15s cubic-bezier(0.35,0,0.25,1),box-shadow 0.15s cubic-bezier(0.35,0,0.25,1);
+  transition: background 0.25s cubic-bezier(0.35,0,0.25,1),border-color 0.15s cubic-bezier(0.35,0,0.25,1),box-shadow 0.15s cubic-bezier(0.35,0,0.25,1);
+  font-size: 1.25rem;
+  padding: 0.65rem 1rem;
+  height: 48px;
+}
+
+.emotion-24::-webkit-input-placeholder {
+  color: hsla(210,10.8%,14.5%,0.45);
+}
+
+.emotion-24::-moz-placeholder {
+  color: hsla(210,10.8%,14.5%,0.45);
+}
+
+.emotion-24:-ms-input-placeholder {
+  color: hsla(210,10.8%,14.5%,0.45);
+}
+
+.emotion-24::placeholder {
+  color: hsla(210,10.8%,14.5%,0.45);
+}
+
+.emotion-24:focus {
+  box-shadow: 0 0 0 3px hsla(209,75.4%,38.2%,0.1),inset 0 0 0 1px hsla(210,10.8%,14.5%,0.2),inset 0 -1px 1px 0 hsla(210,10.8%,14.5%,0.05);
+  outline: none;
+}
+
+.emotion-24:disabled {
+  opacity: 0.8;
+  background: #f1f3f5;
+  cursor: not-allowed;
+  box-shadow: 0 0 0 2px transparent inset,0 0 0 1px hsla(210,10.8%,14.5%,0.12) inset;
+}
+
+.emotion-24:active {
+  background: #f1f3f5;
+}
+
+.emotion-43 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: none;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  border: none;
+  text-rendering: optimizeLegibility;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  box-shadow: none;
+  font-weight: 500;
+  position: relative;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  padding: 0 1rem;
+  height: 40px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: white;
+  color: #212529;
+  background: linear-gradient(to top,#f1f3f5,white);
+  box-shadow: inset 0 0 0 1px hsla(210,10.8%,14.5%,0.2),inset 0 -1px 1px 0 hsla(210,10.8%,14.5%,0.1);
+}
+
+.emotion-43:focus {
+  outline: 3px auto hsla(208.79999999999995,77.2%,42.9%,0.8);
+}
+
+.emotion-43:focus:not([data-focus-visible-added]) {
+  outline: none;
+}
+
+.emotion-43[aria-expanded="true"] {
+  background: none;
+  background-color: #f1f3f5;
+  box-shadow: inset 0 0 0 1px hsla(210,10.8%,14.5%,0.3),inset 0 -1px 1px 0 hsla(210,10.8%,14.5%,0.15);
+}
+
+.emotion-42 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+<Settings
+  onSubmit={[MockFunction]}
+>
+  <form
+    action=""
+    className="emotion-47"
+    onSubmit={[Function]}
+  >
+    <Layer
+      className="emotion-45"
+      elevation="xs"
+    >
+      <div
+        className="emotion-44"
+      >
+        <SettingsRow>
+          <div
+            className="emotion-20 emotion-21"
+          >
+            <SettingsElement>
+              <div
+                className="emotion-8 emotion-9"
+              >
+                <RangeLabeledInput
+                  labelName="Field size"
+                >
+                  <Component
+                    className="emotion-6"
+                    label="Field size: 1"
+                  >
+                    <div
+                      className="emotion-5"
+                    >
+                      <Component
+                        htmlFor="1"
+                      >
+                        <label
+                          className="Label emotion-1"
+                          htmlFor="1"
+                        >
+                          <Component
+                            className="Label__text"
+                            variant="subtitle"
+                          >
+                            <div
+                              className="Label__text emotion-0"
+                            >
+                              Field size: 1
+                            </div>
+                          </Component>
+                        </label>
+                      </Component>
+                      <input
+                        max={10}
+                        min={1}
+                        onChange={[Function]}
+                        placeholder="Name"
+                        step={1}
+                        type="range"
+                        value="1"
+                      />
+                      <div
+                        className="emotion-4"
+                      >
+                        <Component>
+                          <span
+                            className="emotion-2"
+                          >
+                            1
+                          </span>
+                        </Component>
+                        <Component>
+                          <span
+                            className="emotion-2"
+                          >
+                            10
+                          </span>
+                        </Component>
+                      </div>
+                    </div>
+                  </Component>
+                </RangeLabeledInput>
+              </div>
+            </SettingsElement>
+            <SettingsElement>
+              <div
+                className="emotion-8 emotion-9"
+              >
+                <RangeLabeledInput
+                  labelName="Cell size"
+                >
+                  <Component
+                    className="emotion-6"
+                    label="Cell size: 1"
+                  >
+                    <div
+                      className="emotion-5"
+                    >
+                      <Component
+                        htmlFor="2"
+                      >
+                        <label
+                          className="Label emotion-1"
+                          htmlFor="2"
+                        >
+                          <Component
+                            className="Label__text"
+                            variant="subtitle"
+                          >
+                            <div
+                              className="Label__text emotion-0"
+                            >
+                              Cell size: 1
+                            </div>
+                          </Component>
+                        </label>
+                      </Component>
+                      <input
+                        max={10}
+                        min={1}
+                        onChange={[Function]}
+                        placeholder="Name"
+                        step={1}
+                        type="range"
+                        value="1"
+                      />
+                      <div
+                        className="emotion-4"
+                      >
+                        <Component>
+                          <span
+                            className="emotion-2"
+                          >
+                            1
+                          </span>
+                        </Component>
+                        <Component>
+                          <span
+                            className="emotion-2"
+                          >
+                            10
+                          </span>
+                        </Component>
+                      </div>
+                    </div>
+                  </Component>
+                </RangeLabeledInput>
+              </div>
+            </SettingsElement>
+          </div>
+        </SettingsRow>
+        <SettingsRow>
+          <div
+            className="emotion-20 emotion-21"
+          >
+            <SettingsElement>
+              <div
+                className="emotion-8 emotion-9"
+              >
+                <PercentFilled>
+                  <Component
+                    className="emotion-26"
+                    label="Percent filled"
+                  >
+                    <div
+                      className="emotion-25"
+                    >
+                      <Component
+                        htmlFor="3"
+                      >
+                        <label
+                          className="Label emotion-1"
+                          htmlFor="3"
+                        >
+                          <Component
+                            className="Label__text"
+                            variant="subtitle"
+                          >
+                            <div
+                              className="Label__text emotion-0"
+                            >
+                              Percent filled
+                            </div>
+                          </Component>
+                        </label>
+                      </Component>
+                      <ForwardRef
+                        inputSize="lg"
+                        onChange={[Function]}
+                        placeholder="0"
+                        type="number"
+                        value={50}
+                      >
+                        <input
+                          className="Input emotion-24"
+                          id="3"
+                          onChange={[Function]}
+                          onTouchEnd={[Function]}
+                          onTouchStart={[Function]}
+                          placeholder="0"
+                          type="number"
+                          value={50}
+                        />
+                      </ForwardRef>
+                    </div>
+                  </Component>
+                </PercentFilled>
+              </div>
+            </SettingsElement>
+            <SettingsElement>
+              <div
+                className="emotion-8 emotion-9"
+              >
+                <RangeLabeledInput
+                  labelName="Start speed"
+                >
+                  <Component
+                    className="emotion-6"
+                    label="Start speed: 1"
+                  >
+                    <div
+                      className="emotion-5"
+                    >
+                      <Component
+                        htmlFor="4"
+                      >
+                        <label
+                          className="Label emotion-1"
+                          htmlFor="4"
+                        >
+                          <Component
+                            className="Label__text"
+                            variant="subtitle"
+                          >
+                            <div
+                              className="Label__text emotion-0"
+                            >
+                              Start speed: 1
+                            </div>
+                          </Component>
+                        </label>
+                      </Component>
+                      <input
+                        max={10}
+                        min={1}
+                        onChange={[Function]}
+                        placeholder="Name"
+                        step={1}
+                        type="range"
+                        value="1"
+                      />
+                      <div
+                        className="emotion-4"
+                      >
+                        <Component>
+                          <span
+                            className="emotion-2"
+                          >
+                            1
+                          </span>
+                        </Component>
+                        <Component>
+                          <span
+                            className="emotion-2"
+                          >
+                            10
+                          </span>
+                        </Component>
+                      </div>
+                    </div>
+                  </Component>
+                </RangeLabeledInput>
+              </div>
+            </SettingsElement>
+          </div>
+        </SettingsRow>
+        <Button
+          type="submit"
+        >
+          <button
+            className="Button Touchable emotion-43"
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseDownCapture={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchMoveCapture={[Function]}
+            onTouchStart={[Function]}
+            onTouchStartCapture={[Function]}
+            role="button"
+            tabIndex={0}
+            type="submit"
+          >
+            <span
+              aria-hidden={false}
+              className="emotion-42"
+            >
+              Start Game
+            </span>
+          </button>
+        </Button>
+      </div>
+    </Layer>
+  </form>
+</Settings>
+`;

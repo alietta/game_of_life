@@ -3,4 +3,9 @@
 node_modules
 dist
 storybook-static
+.eslintrc.js
+babel.config.js
+jestSettings.js
+jest.config.js
+webpack.config.js
 

@@ -1,37 +1,53 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CaseSensitivePathsPlugin = require("case-sensitive-paths-webpack-plugin");
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
 module.exports = {
-  entry: "./src/index.tsx",
+  entry: './src/index.tsx',
   module: {
     rules: [
       {
-        test: /\.(js|ts)x?$/,
+        test: /\.(js)x?$/,
         exclude: /node_modules/,
-        loader: "babel-loader",
+        loader: 'babel-loader',
+      },
+      {
+        test: /\.(ts)x?$/,
+        use: [
+          {
+            loader: 'babel-loader',
+          },
+          {
+            loader: 'ts-loader',
+            options: {
+              transpileOnly: true,
+            },
+          },
+        ],
+        exclude: /node_modules/,
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },
   resolve: {
-    extensions: [".js", ".ts", ".jsx", ".tsx", "json"],
+    extensions: ['.js', '.ts', '.jsx', '.tsx', 'json'],
     alias: {
-      components: path.resolve(__dirname, "src/components/"),
-      "@": path.resolve(__dirname, "src"),
+      components: path.resolve(__dirname, 'src/components/'),
+      '@': path.resolve(__dirname, 'src'),
     },
   },
   output: {
-    path: path.join(__dirname, "/dist"),
-    filename: "index.js",
+    path: path.join(__dirname, '/dist'),
+    filename: 'index.js',
   },
-  devtool: "source-map",
+  devtool: 'inline-source-map',
   devServer: {
     historyApiFallback: true,
-    contentBase: path.join(__dirname, "dist"),
+    contentBase: path.join(__dirname, 'dist'),
     port: 3040,
     hot: true,
     stats: {
@@ -46,8 +62,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/index.html",
+      template: './src/index.html',
     }),
     new CaseSensitivePathsPlugin(),
+    new ForkTsCheckerWebpackPlugin(),
   ],
 };

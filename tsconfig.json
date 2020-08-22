@@ -6,19 +6,22 @@
     "paths": {
       "@/*": ["src/*"]
     },
+    "allowSyntheticDefaultImports": true,
+    "importsNotUsedAsValues": "preserve",
     "forceConsistentCasingInFileNames": false,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "checkJs": false,
-    "target": "es5",
-    "module": "commonjs",
+    "target": "es6",
+    "module": "esnext",
     "downlevelIteration": true,
     "allowJs": true,
-    "jsx": "react",
+    "jsx": "preserve",
     "sourceMap": true,
     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "types": ["node", "@emotion/core", "jest"]
   },
   "include": ["./src/**/*"],
   "exclude": ["node_modules"]
