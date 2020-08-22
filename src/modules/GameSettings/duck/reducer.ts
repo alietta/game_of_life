@@ -18,6 +18,12 @@ export const settingsSlice = createSlice({
   name: 'settings',
   initialState: settingsInitialState,
   reducers: {
+    reset: (state) => {
+      state.fieldSize = 18;
+      state.cellSize = 50;
+      state.startSpeed = 10;
+      state.percent = 50;
+    },
     field: (state, { payload }: PayloadAction<number>) => {
       state.fieldSize = payload;
     },

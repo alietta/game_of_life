@@ -32,6 +32,10 @@ export const GameSettings: FC = () => {
     setMaxField(Math.floor(900 / cellSize));
   }, [cellSize]);
 
+  useEffect(() => {
+    dispatch(actions.reset());
+  }, [dispatch]);
+
   return (
     <div>
       <Settings

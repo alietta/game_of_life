@@ -1,4 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { settingsSlice } from '@/modules/GameSettings/duck/reducer';
 
 export interface FieldState {
   active: number[];
@@ -22,6 +23,14 @@ export const fieldSlice = createSlice({
     setActive: (state, { payload }: PayloadAction<number[]>) => {
       state.active = payload;
     }
+  },
+  extraReducers: {
+    [settingsSlice.actions.reset.type]: (
+      state
+    ) => {
+      state.active = [];
+      state.cells = [];
+    },
   },
 });
 

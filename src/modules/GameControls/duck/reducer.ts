@@ -57,6 +57,11 @@ export const speedSlice = createSlice({
     ) => {
       state.last = payload;
     },
+    [settingsSlice.actions.reset.type]: (
+      state
+    ) => {
+      state.last = 10;
+    },
   },
 });
 

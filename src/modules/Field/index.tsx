@@ -74,7 +74,8 @@ export const Field: FunctionComponent<Props> = props => {
   }, [cells, cellSize, fieldSize]);
 
   useEffect(() => {
-    dispatch(actions.setActive(randomByPercent(fieldSize, fieldSize, percent)));
+    const newActive = randomByPercent(fieldSize, fieldSize, percent);
+    dispatch(actions.setActive(newActive));
   }, [percent, fieldSize]);
 
   useEffect(() => {
