@@ -58,7 +58,7 @@ export const makeField = (
 };
 
 export const checkNeighbor = (field: number[][], x: number, y: number) => {
-  const rules = [
+  const rules: [number, number][] = [
     [x - 1, y + 1],
     [x, y + 1],
     [x + 1, y + 1],

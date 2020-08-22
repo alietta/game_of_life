@@ -71,24 +71,11 @@ export const Field: FunctionComponent<Props> = props => {
         });
       });
     }
-  }, [cells, cellSize]);
-
-  /* useEffect(() => { */
-  /*   if (presentation) { */
-  /*     dispatch( */
-  /*       actions.setActive([ */
-  /*         0, */
-  /*         fieldSize - 1, */
-  /*         fieldSize * fieldSize - 1, */
-  /*         fieldSize * (fieldSize - 1), */
-  /*       ]) */
-  /*     ); */
-  /*   } */
-  /* }, [fieldSize, cellSize]); */
+  }, [cells, cellSize, fieldSize]);
 
   useEffect(() => {
     dispatch(actions.setActive(randomByPercent(fieldSize, fieldSize, percent)));
-  }, [percent]);
+  }, [percent, fieldSize]);
 
   useEffect(() => {
     const newField = makeField(fieldSize, fieldSize, active, cells);
@@ -101,7 +88,7 @@ export const Field: FunctionComponent<Props> = props => {
       interval = setInterval(() => {
         const generation = getGeneration(cells);
         dispatch(actions.setField(generation));
-      }, 1000 * speed);
+      }, 1000 * 1 / speed);
     }
     return () => {
       if (interval) clearInterval(interval);

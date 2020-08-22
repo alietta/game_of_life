@@ -8,9 +8,9 @@ export interface SettingsState {
 }
 
 const settingsInitialState: SettingsState = {
-  fieldSize: 4,
-  cellSize: 10,
-  startSpeed: 1,
+  fieldSize: 18,
+  cellSize: 50,
+  startSpeed: 10,
   percent: 50,
 };
 

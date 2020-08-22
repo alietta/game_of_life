@@ -21,8 +21,8 @@ const RangeLabeledInput: FC<RangeLabeledInputProps> = props => {
     const formatedValue = formValue ? formValue(val) : val;
     return `${labelName}: ${formatedValue}`;
   }, [labelName]);
-  const [value, setValue] = useState<string>(`${min}`);
-  const [label, setLabel] = useState<string>(getLabel(`${min}`));
+  const [value, setValue] = useState<string>(`${max}`);
+  const [label, setLabel] = useState<string>(getLabel(`${max}`));
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     const { value: rangeValue } = event.target;
     setValue(event.target.value);

@@ -56,9 +56,9 @@ export const GameSettings: FC = () => {
           labelName: 'Start speed',
           formValue: (value: string) => `x${value}`,
           onValueChange: changeSpeed,
-          min: 0.1,
-          max: 5,
-          step: 0.1,
+          min: 1,
+          max: 10,
+          step: 1,
         }}
         percent={{
           onValueChange: changePercent,
