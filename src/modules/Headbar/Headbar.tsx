@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { Header } from './Header';
 
-const Headbar: FC = () => {
+export const Headbar: FC = () => {
   // TODO: take name from store
   const name = 'Anna';
   const onLogout = () => {
@@ -20,4 +20,3 @@ const Headbar: FC = () => {
     />
   );
 };
-export { Headbar };

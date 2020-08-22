@@ -18,7 +18,7 @@ interface EnterFormProps {
   onSubmit: (values?: { name: string }) => void;
 }
 
-const LoginForm: FunctionComponent<EnterFormProps> = ({
+export const LoginForm: FunctionComponent<EnterFormProps> = ({
   onSubmit = (): void => console.log('submint'),
 }: EnterFormProps) => {
   const theme = useTheme();
@@ -68,5 +68,3 @@ const LoginForm: FunctionComponent<EnterFormProps> = ({
     </Layer>
   );
 };
-
-export { LoginForm };
