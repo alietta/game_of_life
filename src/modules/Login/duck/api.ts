@@ -11,7 +11,8 @@ export const logout = async () => {
   localStorage.removeItem('login');
 };
 
-export const getUserName = (): string => {
+export const getUserName = async (): Promise<string > => {
+  await delay(1000);
   return localStorage.getItem('login') || '';
 };
 export const isLoggedIn = async () => {
