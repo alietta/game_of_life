@@ -4,8 +4,7 @@ export const canvasSettings = (canvasElement: HTMLCanvasElement, width: number) 
   const canvas = canvasElement;
   canvas.width = width * 2;
   canvas.height = width * 2;
-  canvas.style.width = `${width}px`;
-  canvas.style.height = `${width}px`;
+  canvas.style.width = '100%';
 };
 
 export interface DrawData {
