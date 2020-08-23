@@ -31,4 +31,12 @@ describe('PercentFilled', () => {
     });
     expect(onValueChange).toHaveBeenCalledWith(4);
   });
+  it('should call onValueChange with empty string', () => {
+    const onValueChange = jest.fn();
+    const element = mount(<PercentFilled onValueChange={onValueChange} />);
+    element.find('input').simulate('change', {
+      target: { value: '' },
+    });
+    expect(onValueChange).toHaveBeenCalledWith(0);
+  });
 });
