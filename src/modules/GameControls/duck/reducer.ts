@@ -8,7 +8,7 @@ export interface SpeedState {
 
 const speedInitialState: SpeedState = {
   current: 0,
-  last: 1,
+  last: 10,
 };
 
 export const speedSlice = createSlice({
@@ -29,23 +29,25 @@ export const speedSlice = createSlice({
       };
       const speedCounter: {[key: string]: (speed: number) => number} = {
         pause: () => 0,
-        play: () => state.last,
+        play: () => state.last || 1,
         slow: (speed: number) => {
-          if (speed === 5 || speed === 0) {
-            return speed;
+          if (speed <= 1) {
+            return 1;
           }
-          return speed < 0.5 ? round(speed + 0.1) : speed + 0.5;
+          return speed - 1;
         },
         fast: (speed: number) => {
-          if (speed === 0.1 || speed === 0) {
-            return speed;
+          if (speed > 10) {
+            return 10;
           }
-          return speed <= 0.5 ? round(speed - 0.1) : speed - 0.5;
+          return speed + 1;
         },
       };
       const newSpeed = speedCounter[payload](state.current);
+      if (payload !== 'pause') {
+        state.last = newSpeed;
+      }
       state.current = newSpeed;
-      state.last = newSpeed;
     },
   },
   extraReducers: {
@@ -54,6 +56,11 @@ export const speedSlice = createSlice({
       { payload }: PayloadAction<number>
     ) => {
       state.last = payload;
+    },
+    [settingsSlice.actions.reset.type]: (
+      state
+    ) => {
+      state.last = 10;
     },
   },
 });

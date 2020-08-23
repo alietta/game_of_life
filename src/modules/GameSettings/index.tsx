@@ -2,10 +2,13 @@ import React, { FC, useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { Settings } from '@/components/Settings';
 import history from '@/rdx/history';
+import { useStoreSelector } from '@/hooks/useStoreSelector';
 import { actions } from './duck/reducer';
 
 export const GameSettings: FC = () => {
   const dispatch = useDispatch();
+  const [maxField, setMaxField] = useState(20);
+  const cellSize = useStoreSelector(state => state.settings.cellSize);
   const changePercent = (value: number) => {
     dispatch(actions.percent(value));
   };
@@ -25,6 +28,14 @@ export const GameSettings: FC = () => {
     history.push('/game');
   };
 
+  useEffect(() => {
+    setMaxField(Math.floor(900 / cellSize));
+  }, [cellSize]);
+
+  useEffect(() => {
+    dispatch(actions.reset());
+  }, [dispatch]);
+
   return (
     <div>
       <Settings
@@ -33,23 +44,25 @@ export const GameSettings: FC = () => {
           labelName: 'Field size',
           formValue: (value: string) => `${value} x ${value}`,
           onValueChange: changeFieldSize,
-          min: 10,
-          max: 100,
+          min: 4,
+          max: maxField,
+          step: 2,
         }}
         cell={{
           labelName: 'Cell size',
           formValue: (value: string) => `${value} x ${value}`,
           onValueChange: changeCellSize,
-          min: 5,
-          max: 25,
+          min: 10,
+          max: 50,
+          step: 2,
         }}
         speed={{
           labelName: 'Start speed',
           formValue: (value: string) => `x${value}`,
           onValueChange: changeSpeed,
-          min: 0.1,
-          max: 5,
-          step: 0.1,
+          min: 1,
+          max: 10,
+          step: 1,
         }}
         percent={{
           onValueChange: changePercent,
