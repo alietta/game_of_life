@@ -18,7 +18,7 @@ interface LoginFormProps {
   onSubmit: (values: { name: string }) => void;
 }
 
-const LoginForm: FunctionComponent<LoginFormProps> = ({
+export const LoginForm: FunctionComponent<LoginFormProps> = ({
   onSubmit = (): void => console.log('submint'),
 }) => {
   const theme = useTheme();
@@ -68,5 +68,3 @@ const LoginForm: FunctionComponent<LoginFormProps> = ({
     </Layer>
   );
 };
-
-export { LoginForm };

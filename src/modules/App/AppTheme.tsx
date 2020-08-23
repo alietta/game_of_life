@@ -7,14 +7,10 @@ interface Props {
 
 export const AppTheme: FC<Props> = (props) => {
   const { darkTheme, children } = props;
-
-  return darkTheme ? (
-    <DarkMode>
+  const Theme = darkTheme ? DarkMode : LightMode;
+  return (
+    <Theme>
       {children}
-    </DarkMode>
-  ) : (
-    <LightMode>
-      {children}
-    </LightMode>
+    </Theme>
   );
 };

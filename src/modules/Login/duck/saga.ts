@@ -6,7 +6,7 @@ import { actions } from './reducer';
 import { isLoggedIn, getUserName, login, logout } from './api';
 
 export function* checkUserWorker() {
-  yield put(appSlice.actions.loading());
+  yield put(appSlice.actions.setStatus('loading'));
   const isAuth: boolean = yield call(isLoggedIn);
   const name: string = yield call(getUserName);
   if (isAuth) {
@@ -14,7 +14,7 @@ export function* checkUserWorker() {
   } else {
     yield put(actions.logoutSuccess());
   }
-  yield put(appSlice.actions.success());
+  yield put(appSlice.actions.setStatus('success'));
 }
 
 export function* logoutWorker() {
