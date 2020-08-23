@@ -50,7 +50,7 @@ describe('Canvas Helper', () => {
       const cellSize = 10;
       canvasSettings(ctx.canvas, 1000);
       const data = getDrawData(ctx.canvas, cellSize);
-      const cells = [[0, 0, 1], [0, 1, 1], [1, 0, 1]];
+      const cells = [[0, 0, 1], [0, 4, 5], [7, 0, 8]];
       drawCells(cells, cellSize, data);
       // eslint-disable-next-line
       expect(ctx.__getEvents()).toMatchSnapshot();
