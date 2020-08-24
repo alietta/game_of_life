@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1598203528073" clover="3.2.0">
+  <project timestamp="1598203528073" name="All files">
+    <metrics statements="204" coveredstatements="196" conditionals="57" coveredconditionals="54" methods="60" coveredmethods="54" elements="321" coveredelements="304" complexity="0" loc="204" ncloc="204" packages="13" files="24" classes="24"/>
+    <package name="components.Controls">
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <file name="Controls.tsx" path="/Users/tatiana/study/game_of_life/src/components/Controls/Controls.tsx">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="6" type="stmt"/>
+        <line num="20" count="6" type="stmt"/>
+        <line num="22" count="24" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="29" count="6" type="stmt"/>
+      </file>
+      <file name="ControlsStyles.ts" path="/Users/tatiana/study/game_of_life/src/components/Controls/ControlsStyles.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.PercentFilled">
+      <metrics statements="13" coveredstatements="13" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2"/>
+      <file name="PercentFilled.tsx" path="/Users/tatiana/study/game_of_life/src/components/PercentFilled/PercentFilled.tsx">
+        <metrics statements="13" coveredstatements="13" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="12" type="stmt"/>
+        <line num="10" count="12" type="stmt"/>
+        <line num="11" count="12" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="15" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="17" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="24" count="12" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/tatiana/study/game_of_life/src/components/PercentFilled/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.RangeLabeledInput">
+      <metrics statements="14" coveredstatements="14" conditionals="7" coveredconditionals="7" methods="4" coveredmethods="4"/>
+      <file name="RangeLabeledInput.tsx" path="/Users/tatiana/study/game_of_life/src/components/RangeLabeledInput/RangeLabeledInput.tsx">
+        <metrics statements="14" coveredstatements="14" conditionals="7" coveredconditionals="7" methods="4" coveredmethods="4"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="19" count="16" type="stmt"/>
+        <line num="20" count="16" type="stmt"/>
+        <line num="21" count="30" type="cond" truecount="2" falsecount="0"/>
+        <line num="22" count="30" type="stmt"/>
+        <line num="24" count="16" type="stmt"/>
+        <line num="25" count="16" type="stmt"/>
+        <line num="26" count="16" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="29" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="32" count="16" type="stmt"/>
+        <line num="33" count="14" type="stmt"/>
+        <line num="36" count="16" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/tatiana/study/game_of_life/src/components/RangeLabeledInput/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.Settings">
+      <metrics statements="9" coveredstatements="9" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
+      <file name="SettingStyle.ts" path="/Users/tatiana/study/game_of_life/src/components/Settings/SettingStyle.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+      </file>
+      <file name="Settings.tsx" path="/Users/tatiana/study/game_of_life/src/components/Settings/Settings.tsx">
+        <metrics statements="6" coveredstatements="6" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="constants">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="/Users/tatiana/study/game_of_life/src/constants/index.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="hooks">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="useStoreSelector.ts" path="/Users/tatiana/study/game_of_life/src/hooks/useStoreSelector.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="layouts">
+      <metrics statements="8" coveredstatements="8" conditionals="1" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <file name="LayoutStyles.ts" path="/Users/tatiana/study/game_of_life/src/layouts/LayoutStyles.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="7" count="3" type="cond" truecount="0" falsecount="1"/>
+      </file>
+      <file name="WithHeadbarLayout.tsx" path="/Users/tatiana/study/game_of_life/src/layouts/WithHeadbarLayout.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+      </file>
+      <file name="WithoutHeadbarLayout.tsx" path="/Users/tatiana/study/game_of_life/src/layouts/WithoutHeadbarLayout.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="modules.App.duck">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="reducer.ts" path="/Users/tatiana/study/game_of_life/src/modules/App/duck/reducer.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="modules.Field">
+      <metrics statements="67" coveredstatements="67" conditionals="30" coveredconditionals="30" methods="16" coveredmethods="16"/>
+      <file name="canvasFunctions.ts" path="/Users/tatiana/study/game_of_life/src/modules/Field/canvasFunctions.ts">
+        <metrics statements="26" coveredstatements="26" conditionals="8" coveredconditionals="8" methods="5" coveredmethods="5"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="36" count="2" type="stmt"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="38" count="2" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="52" count="3" type="stmt"/>
+        <line num="53" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="54" count="5" type="cond" truecount="4" falsecount="0"/>
+        <line num="55" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="56" count="5" type="stmt"/>
+        <line num="57" count="5" type="stmt"/>
+      </file>
+      <file name="helper.ts" path="/Users/tatiana/study/game_of_life/src/modules/Field/helper.ts">
+        <metrics statements="41" coveredstatements="41" conditionals="22" coveredconditionals="22" methods="11" coveredmethods="11"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="5" count="16" type="stmt"/>
+        <line num="6" count="16" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="9" count="13" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="16" count="6" type="stmt"/>
+        <line num="17" count="6" type="stmt"/>
+        <line num="18" count="6" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="33" count="12" type="stmt"/>
+        <line num="34" count="12" type="stmt"/>
+        <line num="36" count="2" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="45" count="2" type="cond" truecount="3" falsecount="0"/>
+        <line num="46" count="2" type="stmt"/>
+        <line num="48" count="4" type="stmt"/>
+        <line num="49" count="2" type="stmt"/>
+        <line num="50" count="4" type="stmt"/>
+        <line num="51" count="4" type="cond" truecount="5" falsecount="0"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="54" count="3" type="stmt"/>
+        <line num="57" count="2" type="stmt"/>
+        <line num="60" count="1" type="stmt"/>
+        <line num="61" count="30" type="stmt"/>
+        <line num="71" count="30" type="stmt"/>
+        <line num="72" count="30" type="stmt"/>
+        <line num="73" count="30" type="stmt"/>
+        <line num="75" count="240" type="cond" truecount="4" falsecount="0"/>
+        <line num="76" count="240" type="cond" truecount="2" falsecount="0"/>
+        <line num="78" count="30" type="stmt"/>
+        <line num="81" count="1" type="stmt"/>
+        <line num="82" count="3" type="stmt"/>
+        <line num="83" count="9" type="stmt"/>
+        <line num="84" count="27" type="stmt"/>
+        <line num="85" count="27" type="cond" truecount="4" falsecount="0"/>
+        <line num="86" count="27" type="cond" truecount="2" falsecount="0"/>
+      </file>
+    </package>
+    <package name="modules.Headbar">
+      <metrics statements="12" coveredstatements="10" conditionals="1" coveredconditionals="1" methods="5" coveredmethods="3"/>
+      <file name="Headbar.tsx" path="/Users/tatiana/study/game_of_life/src/modules/Headbar/Headbar.tsx">
+        <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+      </file>
+      <file name="Header.tsx" path="/Users/tatiana/study/game_of_life/src/modules/Headbar/Header.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="6" type="stmt"/>
+        <line num="13" count="6" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/tatiana/study/game_of_life/src/modules/Headbar/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="modules.Login.components.LoginForm">
+      <metrics statements="10" coveredstatements="9" conditionals="1" coveredconditionals="0" methods="4" coveredmethods="3"/>
+      <file name="LoginForm.tsx" path="/Users/tatiana/study/game_of_life/src/modules/Login/components/LoginForm/LoginForm.tsx">
+        <metrics statements="10" coveredstatements="9" conditionals="1" coveredconditionals="0" methods="4" coveredmethods="3"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="24" count="3" type="stmt"/>
+        <line num="25" count="3" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="29" count="3" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="34" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="modules.Login.duck">
+      <metrics statements="52" coveredstatements="47" conditionals="6" coveredconditionals="5" methods="16" coveredmethods="13"/>
+      <file name="api.ts" path="/Users/tatiana/study/game_of_life/src/modules/Login/duck/api.ts">
+        <metrics statements="13" coveredstatements="13" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+      </file>
+      <file name="reducer.ts" path="/Users/tatiana/study/game_of_life/src/modules/Login/duck/reducer.ts">
+        <metrics statements="17" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="6"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="36" count="2" type="stmt"/>
+        <line num="39" count="2" type="stmt"/>
+        <line num="40" count="2" type="stmt"/>
+        <line num="41" count="2" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="50" count="2" type="stmt"/>
+      </file>
+      <file name="saga.ts" path="/Users/tatiana/study/game_of_life/src/modules/Login/duck/saga.ts">
+        <metrics statements="22" coveredstatements="19" conditionals="4" coveredconditionals="3" methods="4" coveredmethods="3"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="34" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="utils">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="delay.ts" path="/Users/tatiana/study/game_of_life/src/utils/delay.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="6" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
