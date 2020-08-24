@@ -7,7 +7,7 @@ export type RangeLabeledInputProps = {
   onValueChange?: (value: string) => void;
 } & React.InputHTMLAttributes<HTMLInputElement>;
 
-const RangeLabeledInput: FC<RangeLabeledInputProps> = props => {
+export const RangeLabeledInput: FC<RangeLabeledInputProps> = props => {
   const {
     formValue,
     labelName,
@@ -52,5 +52,3 @@ const RangeLabeledInput: FC<RangeLabeledInputProps> = props => {
     </InputGroup>
   );
 };
-
-export { RangeLabeledInput };

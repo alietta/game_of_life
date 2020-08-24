@@ -10,13 +10,13 @@ describe('Login saga', () => {
   it('checkUser login', () => {
     return expectSaga(checkUserWorker)
       .withReducer(reducer)
-      .put(appSlice.actions.loading())
+      .put(appSlice.actions.setStatus('loading'))
       .provide([
         [matchers.call.fn(isLoggedIn), true],
         [matchers.call.fn(getUserName), 'Helen'],
       ])
       .put(actions.loginSuccess('Helen'))
-      .put(appSlice.actions.success())
+      .put(appSlice.actions.setStatus('success'))
       .hasFinalState({
         status: 'success',
         isAuth: true,
@@ -27,13 +27,13 @@ describe('Login saga', () => {
   it('checkUser logout', () => {
     return expectSaga(checkUserWorker)
       .withReducer(reducer)
-      .put(appSlice.actions.loading())
+      .put(appSlice.actions.setStatus('loading'))
       .provide([
         [matchers.call.fn(isLoggedIn), false],
         [matchers.call.fn(getUserName), null],
       ])
       .put(actions.logoutSuccess())
-      .put(appSlice.actions.success())
+      .put(appSlice.actions.setStatus('success'))
       .hasFinalState({
         status: 'success',
         isAuth: false,

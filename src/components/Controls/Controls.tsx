@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, useCallback } from 'react';
 import { RESET, PLAY, FAST, SLOW, PAUSE } from '@/constants';
 import {
   Layer,
@@ -15,13 +15,16 @@ export interface ControlsProps {
   resetGame: () => void;
   changeSpeed: (speed: string) => void;
 }
-const Controls: FC<ControlsProps> = props => {
+export const Controls: FC<ControlsProps> = props => {
   const { resetGame, changeSpeed } = props;
-  const handleClick = (speed: string) => {
-    return () => {
-      changeSpeed(speed);
-    };
-  };
+  const handleClick = useCallback(
+    (speed: string) => {
+      return () => {
+        changeSpeed(speed);
+      };
+    },
+    [changeSpeed]
+  );
 
   return (
     <Layer elevation="xs" css={LayerStyle}>
@@ -73,4 +76,3 @@ const Controls: FC<ControlsProps> = props => {
     </Layer>
   );
 };
-export { Controls };

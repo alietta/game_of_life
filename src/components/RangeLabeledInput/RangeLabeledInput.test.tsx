@@ -13,8 +13,7 @@ describe('RangeLabeledInput', () => {
     element.find('input').simulate('change', {
       target: { value: '4' },
     });
-    expect(onValueChange).toHaveBeenCalled();
-    expect(onValueChange.mock.calls[0][0]).toBe('4');
+    expect(onValueChange).toHaveBeenCalledWith('4');
   });
   it('should call formValue', () => {
     const formValue = jest.fn();

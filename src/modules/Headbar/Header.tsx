@@ -6,7 +6,7 @@ interface HeaderProps {
   name?: string;
   switchTheme: () => void;
 }
-const Header: FC<HeaderProps> = (props) => {
+export const Header: FC<HeaderProps> = (props) => {
   const { name = '', onLogout, switchTheme } = props;
   const theme = useTheme();
 
@@ -47,4 +47,3 @@ const Header: FC<HeaderProps> = (props) => {
     </div>
   );
 };
-export { Header };

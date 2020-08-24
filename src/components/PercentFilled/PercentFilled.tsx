@@ -5,11 +5,11 @@ export interface PercentFilledProps {
   onValueChange?: (value: number) => void;
 }
 
-const PercentFilled: FC<PercentFilledProps> = props => {
+export const PercentFilled: FC<PercentFilledProps> = props => {
   const { onValueChange } = props;
   const [value, setValue] = useState<number | string>(50);
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-    const { value } = event.currentTarget;
+    const { value } = event.target;
     if (value !== '') {
       const percent = Math.abs(parseInt(event.target.value, 10));
       const roundedPercent = percent <= 100 ? percent : 100;
@@ -36,5 +36,3 @@ const PercentFilled: FC<PercentFilledProps> = props => {
     </InputGroup>
   );
 };
-
-export { PercentFilled };

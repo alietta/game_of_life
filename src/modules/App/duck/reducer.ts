@@ -1,7 +1,8 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
+export type Status = 'loading' | 'success' | 'error';
 export interface AppState {
-  status: string;
+  status: Status;
   darkTheme: boolean;
 }
 
@@ -13,14 +14,8 @@ export const appSlice = createSlice({
   name: 'app',
   initialState: appInitialState,
   reducers: {
-    loading: (state) => {
-      state.status = 'loading';
-    },
-    success: (state) => {
-      state.status = 'success';
-    },
-    error: (state) => {
-      state.status = 'error';
+    setStatus: (state, { payload }: PayloadAction<Status>) => {
+      state.status = payload;
     },
     switchTheme: (state) => {
       state.darkTheme = !state.darkTheme;

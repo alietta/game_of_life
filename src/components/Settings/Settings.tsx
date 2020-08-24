@@ -12,7 +12,7 @@ interface Props {
   percent?: PercentFilledProps;
 }
 
-const Settings: FC<Props> = props => {
+export const Settings: FC<Props> = props => {
   const {
     onSubmit,
     field = { labelName: 'Field size' },
@@ -49,5 +49,3 @@ const Settings: FC<Props> = props => {
     </form>
   );
 };
-
-export { Settings };
